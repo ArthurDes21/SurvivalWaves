@@ -1,16 +1,20 @@
+from dotenv import load_dotenv
+import os
 import j2l.pytactx.agent as pytactx
 from ZombieManager import ZombieManager
 
-arbitre = pytactx.Agent(
-            playerId="21122003",
-            arena="survivalwaves", 
-            username="demo", 
-            password="demo", 
-            server="mqtt.jusdeliens.com", 
-            verbosity=2
-        )
+load_dotenv() 
+playerId = os.environ['PLAYER_ID']
 
-# Zombies names
+arbitre = pytactx.Agent(
+    playerId=playerId,
+	arena="survivalwaves",
+	username="demo",
+	password="demo",
+	server="mqtt.jusdeliens.com",
+	verbosity=2
+)
+
 noms_zombies = [
     "RigoloMort",
     "CervelleJoyeuse",
@@ -18,13 +22,6 @@ noms_zombies = [
     "Risquatouille",
     "FarceurDécomposé",
 ]
-
-# Rules
-arbitre.ruleArena("reset", True)
-arbitre.ruleArena("profiles", ["arbitre", "zombie"])
-arbitre.ruleArena("pIcons", ["👮", "🧟"])
-arbitre.ruleArena("dtMove", [0, 1000])
-arbitre.update()
 
 # Create zombies
 zombie_manager = ZombieManager(arbitre)
