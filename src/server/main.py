@@ -13,7 +13,7 @@ arbitre = pytactx.Agent(
 	username="demo",
 	password="demo",
 	server="mqtt.jusdeliens.com",
-	verbosity=2
+	verbosity=2,
 )
 
 ServerRules(arbitre).applyRules()
@@ -27,5 +27,5 @@ noms_zombies = [
 ]
 
 # Create zombies
-zombie_manager = ZombieManager(arbitre)
-zombie_manager.create_zombies(noms_zombies)
+zombie_manager = ZombieManager(arbitre, noms_zombies)
+zombie_manager.create_zombies()
