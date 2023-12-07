@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 import os
 import j2l.pytactx.agent as pytactx
 from ZombieManager import ZombieManager
+from serverRules import ServerRules
 
 load_dotenv() 
 playerId = os.environ['PLAYER_ID']
@@ -14,6 +15,8 @@ arbitre = pytactx.Agent(
 	server="mqtt.jusdeliens.com",
 	verbosity=2
 )
+
+ServerRules(arbitre).applyRules()
 
 noms_zombies = [
     "RigoloMort",
