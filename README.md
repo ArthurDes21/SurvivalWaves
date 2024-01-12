@@ -96,3 +96,26 @@ Ce qui reste à faire priorisé dans le temps
 ## ⚖️ License
 S'appuyer sur https://choosealicense.com/ ou la doc de github
 Attention à vérifier la compatibilité de votre licence avec celles des modules utilisés
+
+# ðŸ’¯ Evaluation de votre jeu
+Soutenance orale de 10 Ã  15 minutes en groupe suivie de 5 Ã  10 minutes de questions
+
+Vous serez Ã©valuÃ©s par votre enseignant ainsi que vos camarades via un formulaire en ligne, selon les critÃ¨res suivants :
+- [ ] Respect des bonnes pratiques de dÃ©veloppement : SOLID, CDD, TDD, POO, Designs Patterns, DRY
+- [ ] OriginalitÃ© de votre proposition, du gameplay, de vos graphiques
+- [ ] FacilitÃ© de prise en main de l'API pour les utilisateurs en Python pour crÃ©er leur agent et mettre en oeuvre les user stories prÃ©vues
+- [ ] FacilitÃ© de prise en main du viewer de l'arÃ¨ne par les utilisateurs en reliant les boutons "tutoriel" Ã  votre readme github, et le bouton "code your own robot"
+- [ ] Documentation : respect du plan demandÃ© pour les README, les diagrammes de conception sont fournis (sÃ©quence, classe)
+- [ ] Docstrings pour chaque classes, fonctions, fichier
+- [ ] PrÃ©sentation : respect du temps, utilisation d'un langage technique adaptÃ©
+
+Votre prÃ©sentation devra suivre le plan suivant:
+- Introduction : cahier de charges, contexte, organisation du groupe
+- Etat initial du projet, Conception schÃ©mas et modÃ¨les, solutions dÃ©veloppÃ©es, Ã©tat final et dÃ©monstration
+- Conclusion : rÃ©trospective, ce qui marche/ce qui ne marche pas, Ã©volutions possibles
+
+Les sÃ©ances du mardi 16/01 et mercredi 17/01 seront consacrÃ©es au passage des soutenances. Pensez-donc bien Ã  finaliser tous vos livrables avant pour pouvoir prÃ©senter un projet fonctionnel. Tous les Ã©lÃ¨ves 
+
+Bon courage Ã  tous !
+
+    
